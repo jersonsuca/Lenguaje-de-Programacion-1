@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N;
+    char respuesta;
+    do {
+        cout << "Ingrese un numero entero: ";
+        cin >> N;
+        long long factorial = 1;
+        for(int i = 1; i <= N; i++) {
+            factorial = factorial * i;
+        }
+        cout << "El factorial es: " << factorial << endl;
+        cout << "�Desea calcular otro factorial s/n:" << endl;
+        cin >> respuesta;
+    } while(respuesta == 's' || respuesta == 'S');
+
+    return 0;
+}
